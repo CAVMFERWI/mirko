@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIRKO — Heroína Coelho | Fã-page</title>
+  <meta name="description" content="Fã-page sobre Mirko (Rumi Usagiyama), a heroína número 5 do Japão em My Hero Academia: Quirk Rabbit, treino brutal e estilo de luta." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="MIRKO — Heroína Coelho | Fã-page" />
+  <meta property="og:description" content="Fã-page sobre Mirko (Rumi Usagiyama), a heroína número 5 do Japão em My Hero Academia: Quirk Rabbit, treino brutal e estilo de luta." />
+  <meta property="og:image" content="img/mirko-sobre.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B0%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" as="image" href="img/mirko-sobre.jpg" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo" aria-label="Mirko — página inicial">MIRKO</a>
+    <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar__links" id="menu" aria-label="Principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="treino.html">Treino</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Heroína Nº 5 do Japão · Rabbit Hero</p>
+        <h1 class="hero__title">MIRKO</h1>
+        <p class="hero__tagline text-gradient">Força sem limites.</p>
+        <p class="hero__subtitle">
+          Rumi Usagiyama não espera pelo resgate perfeito. Ela pula na frente do perigo,
+          confia nas próprias pernas e resolve o problema — sozinha, se precisar.
+        </p>
+        <div class="hero__actions">
+          <a href="sobre.html" class="btn btn--primary">Sobre a Heroína <span aria-hidden="true">→</span></a>
+          <a href="treino.html" class="btn btn--outline">Treino e Estilo de Luta</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-tilt>
+        <span class="hero__jp" aria-hidden="true">ミルコ</span>
+        <figure class="hero__frame">
+          <img src="img/mirko-sobre.jpg" width="554" height="554" fetchpriority="high"
+               alt="Retrato de Mirko sorrindo, com orelhas de coelho, olhos vermelhos e cabelo branco" />
+        </figure>
+        <div class="hero__badge hero__badge--top"><strong>Nº 5</strong><small>Ranking do Japão</small></div>
+        <div class="hero__badge hero__badge--bottom"><strong>RABBIT</strong><small>Pernas &amp; orelhas</small></div>
+      </div>
+
+      <a class="hero__scroll" href="#numeros" aria-label="Rolar para a próxima seção"></a>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track"><span>Usagiyama Rumi ✦</span><span>Heroína Nº 5 ✦</span><span>Quirk Rabbit ✦</span><span>Nunca recuar ✦</span><span>ミルコ ✦</span><span>Usagiyama Rumi ✦</span><span>Heroína Nº 5 ✦</span><span>Quirk Rabbit ✦</span><span>Nunca recuar ✦</span><span>ミルコ ✦</span><span>Usagiyama Rumi ✦</span><span>Heroína Nº 5 ✦</span><span>Quirk Rabbit ✦</span><span>Nunca recuar ✦</span><span>ミルコ ✦</span><span>Usagiyama Rumi ✦</span><span>Heroína Nº 5 ✦</span><span>Quirk Rabbit ✦</span><span>Nunca recuar ✦</span><span>ミルコ ✦</span></div>
+    </div>
+
+    <!-- ===== ESTATÍSTICAS ===== -->
+    <section class="section stats" id="numeros">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ficha da heroína</p>
+          <h2 class="section-heading">Números da <span class="text-gradient">Coelha</span></h2>
+        </div>
+        <div class="stats__grid">
+          <div class="stat-card reveal"><div class="stat-card__number"><span data-counter="5">0</span>º</div><div class="stat-card__label">Ranking de heroína</div></div>
+          <div class="stat-card reveal d1"><div class="stat-card__number"><span data-counter="1">0</span></div><div class="stat-card__label">Quirk: Rabbit</div></div>
+          <div class="stat-card reveal d2"><div class="stat-card__number"><span data-counter="6">0</span></div><div class="stat-card__label">Pilares de treino</div></div>
+          <div class="stat-card reveal d3"><div class="stat-card__number"><span data-counter="100">0</span>%</div><div class="stat-card__label">Domínio de taijutsu</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PODER EM TRÊS FRENTES ===== -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Estilo de combate</p>
+          <h2 class="section-heading">Poder em <span class="text-gradient">três frentes</span></h2>
+          <p class="section-lead">Não é só o Quirk. É a combinação de um poder fora de série com técnica e cabeça fria.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><svg class="feature-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg><h3>Pernas de guerra</h3><p>Saltos e chutes com potência capaz de derrubar vilões monstruosos num único golpe.</p></article>
+          <article class="feature-card reveal d1"><svg class="feature-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3Zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4ZM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6Z"/></svg><h3>Orelhas-radar</h3><p>Audição sobre-humana: ela ouve o movimento do inimigo antes de ele acontecer.</p></article>
+          <article class="feature-card reveal d2"><svg class="feature-card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm0-14a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/></svg><h3>Taijutsu puro</h3><p>Técnica de luta que funciona mesmo quando o Quirk é anulado. A base de tudo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESTAQUE (puxa tráfego para treino.html) ===== -->
+    <section class="section spotlight-section">
+      <div class="wrap spotlight">
+        <div class="spotlight__media reveal reveal--left" data-tilt>
+          <img src="img/mirko-treino-4.jpg" width="422" height="726" loading="lazy"
+               alt="Página de mangá com Mirko de traje de heroína em pose confiante" />
+          <span class="spotlight__tag">Treino</span>
+        </div>
+        <div class="spotlight__text reveal reveal--right">
+          <p class="eyebrow">A rotina por trás da lenda</p>
+          <h2>O corpo é a <span class="text-gradient">arma</span></h2>
+          <p>
+            Nenhum Quirk sobrevive sem uma base física implacável. Descubra a rotina brutal e
+            a filosofia de combate que transformaram Rumi Usagiyama na heroína mais temida
+            pelos vilões — mesmo sem depender só do seu poder.
+          </p>
+          <ul class="chips" aria-label="Etapas do treino">
+            <li><b>01</b>Preparo físico</li><li><b>02</b>Taijutsu</li><li><b>03</b>Resistência à dor</li>
+            <li><b>04</b>Agilidade</li><li><b>05</b>Leitura de combate</li><li><b>06</b>Nunca recuar</li>
+          </ul>
+          <a href="treino.html" class="btn btn--primary">Ver o treino completo <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEASER DA GALERIA ===== -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Fã-arte</p>
+          <h2 class="section-heading">Coelha em <span class="text-gradient">todos os traços</span></h2>
+        </div>
+        <div class="teaser">
+          <a class="reveal" href="galeria.html"><img src="img/galeria-natal.jpg" loading="lazy" alt="Mirko em versão natalina com saco de presentes" /></a>
+          <a class="reveal d1" href="galeria.html"><img src="img/galeria-quimono.jpg" loading="lazy" alt="Mirko de quimono com coque" /></a>
+          <a class="reveal d2" href="galeria.html"><img src="img/galeria-casual.jpg" loading="lazy" alt="Mirko em look casual cinza" /></a>
+          <a class="reveal d3" href="galeria.html"><img src="img/galeria-esboco-azul.jpg" loading="lazy" alt="Esboço azul de Mirko ajeitando os óculos" /></a>
+        </div>
+        <a href="galeria.html" class="btn btn--outline">Abrir a galeria completa <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="cta-final__box reveal reveal--zoom">
+        <h2>Pronto para conhecer a <span>Coelha Louca</span>?</h2>
+        <div class="cta-final__actions">
+          <a href="sobre.html" class="btn btn--primary">Conhecer a heroína <span aria-hidden="true">→</span></a>
+          <a href="treino.html" class="btn btn--outline">Ver o treino <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">MIRKO</a>
+        <p>Fã-page dedicada à heroína coelho de My Hero Academia.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="treino.html">Treino</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="contato.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.22 2.5.48.68.26 1.25.62 1.82 1.18.56.57.92 1.14 1.18 1.82.26.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.85-.48 2.5a4.9 4.9 0 0 1-1.18 1.82 4.9 4.9 0 0 1-1.82 1.18c-.65.26-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.22-2.5-.48a4.9 4.9 0 0 1-1.82-1.18 4.9 4.9 0 0 1-1.18-1.82c-.26-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.85.48-2.5.26-.68.62-1.25 1.18-1.82A4.9 4.9 0 0 1 5.54 1.4c.65-.26 1.4-.43 2.5-.48C9.14 2.01 9.4 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg></a>
+        <a href="contato.html" aria-label="Twitter/X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.9 22H1.8l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 4H5.3l12.4 16Z"/></svg></a>
+      </div>
+    </div>
+    <p class="footer__legal">Fã-page não oficial — My Hero Academia © seus respectivos criadores. As artes pertencem aos seus autores.</p>
+  </footer>
+</body>
+</html>

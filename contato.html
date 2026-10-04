@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Fã-page da Mirko</title>
+  <meta name="description" content="Redes sociais da fã-page de Mirko, heroína coelho de My Hero Academia." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="Contato — Fã-page da Mirko" />
+  <meta property="og:description" content="Redes sociais da fã-page de Mirko, heroína coelho de My Hero Academia." />
+  <meta property="og:image" content="img/mirko-sobre.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B0%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo" aria-label="Mirko — página inicial">MIRKO</a>
+    <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar__links" id="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="treino.html">Treino</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <p class="eyebrow">Fã-page não oficial</p>
+      <h1>Siga a coelha</h1>
+      <p class="page-hero__lead">Acompanhe mais conteúdo sobre Mirko nas redes abaixo.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <!-- TODO: trocar cada href="#" pelo link real da rede -->
+        <div class="social-grid">
+          <a href="#" class="social-card reveal" aria-label="Instagram da fã-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.22 2.5.48.68.26 1.25.62 1.82 1.18.56.57.92 1.14 1.18 1.82.26.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.85-.48 2.5a4.9 4.9 0 0 1-1.18 1.82 4.9 4.9 0 0 1-1.82 1.18c-.65.26-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.22-2.5-.48a4.9 4.9 0 0 1-1.82-1.18 4.9 4.9 0 0 1-1.18-1.82c-.26-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.85.48-2.5.26-.68.62-1.25 1.18-1.82A4.9 4.9 0 0 1 5.54 1.4c.65-.26 1.4-.43 2.5-.48C9.14 2.01 9.4 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg><strong>Instagram</strong><span>@sua-fanpage</span></a>
+          <a href="#" class="social-card reveal d1" aria-label="Twitter / X da fã-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.9 22H1.8l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 4H5.3l12.4 16Z"/></svg><strong>Twitter / X</strong><span>@sua-fanpage</span></a>
+          <a href="#" class="social-card reveal d2" aria-label="TikTok da fã-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.1v13.2c0 1.5-1.2 2.7-2.7 2.7a2.7 2.7 0 0 1-2.7-2.7 2.7 2.7 0 0 1 2.7-2.7c.3 0 .6.05.9.14V9.5a5.9 5.9 0 0 0-.9-.07A5.87 5.87 0 0 0 5 15.3a5.87 5.87 0 0 0 5.8 5.87 5.87 5.87 0 0 0 5.8-5.87V8.4a8.1 8.1 0 0 0 4.4 1.3V6.6a4.85 4.85 0 0 1-4.4-4.6Z"/></svg><strong>TikTok</strong><span>@sua-fanpage</span></a>
+          <a href="#" class="social-card reveal d3" aria-label="Discord da fã-page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 5.3A18 18 0 0 0 15.8 4l-.3.6a13.5 13.5 0 0 1 4 1.6 15.9 15.9 0 0 0-13 0 13.5 13.5 0 0 1 4-1.6L10.2 4a18 18 0 0 0-4.5 1.4C2.9 9 2.2 12.6 2.5 16.1a17.9 17.9 0 0 0 5.4 2.7l.7-1.1a11.6 11.6 0 0 1-1.9-.9l.5-.4a12.9 12.9 0 0 0 10.6 0l.5.4a11.6 11.6 0 0 1-1.9.9l.7 1.1a17.8 17.8 0 0 0 5.4-2.7c.4-4-.6-7.6-2.2-10.8ZM9.5 14.3c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.7 1.7-1.5 1.7Zm5 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.7 1.7-1.5 1.7Z"/></svg><strong>Discord</strong><span>Servidor da comunidade</span></a>
+        </div>
+        <p class="note reveal">
+          Todas as artes exibidas no site pertencem aos seus respectivos autores. Se você é o artista
+          de alguma imagem e quer crédito ou remoção, fale com a gente por qualquer rede acima.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">MIRKO</a>
+        <p>Fã-page dedicada à heroína coelho de My Hero Academia.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="treino.html">Treino</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="contato.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.22 2.5.48.68.26 1.25.62 1.82 1.18.56.57.92 1.14 1.18 1.82.26.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.85-.48 2.5a4.9 4.9 0 0 1-1.18 1.82 4.9 4.9 0 0 1-1.82 1.18c-.65.26-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.22-2.5-.48a4.9 4.9 0 0 1-1.82-1.18 4.9 4.9 0 0 1-1.18-1.82c-.26-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.85.48-2.5.26-.68.62-1.25 1.18-1.82A4.9 4.9 0 0 1 5.54 1.4c.65-.26 1.4-.43 2.5-.48C9.14 2.01 9.4 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg></a>
+        <a href="contato.html" aria-label="Twitter/X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.9 22H1.8l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 4H5.3l12.4 16Z"/></svg></a>
+      </div>
+    </div>
+    <p class="footer__legal">Fã-page não oficial — My Hero Academia © seus respectivos criadores. As artes pertencem aos seus autores.</p>
+  </footer>
+</body>
+</html>

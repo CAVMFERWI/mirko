@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria de Fã-arte — Mirko | Fã-page</title>
+  <meta name="description" content="Galeria de fã-arte e cenas icônicas de Mirko, com lightbox." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="Galeria de Fã-arte — Mirko | Fã-page" />
+  <meta property="og:description" content="Galeria de fã-arte e cenas icônicas de Mirko, com lightbox." />
+  <meta property="og:image" content="img/mirko-sobre.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B0%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo" aria-label="Mirko — página inicial">MIRKO</a>
+    <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar__links" id="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="treino.html">Treino</a>
+      <a href="galeria.html" aria-current="page">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <p class="eyebrow">Fã-arte</p>
+      <h1>Galeria</h1>
+      <p class="page-hero__lead">Artes e cenas icônicas de Mirko. Clique em qualquer imagem para ampliar; use as setas do teclado para navegar e Esc para fechar.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap gallery-grid">
+        <button class="gallery-item reveal" type="button" aria-label="Ampliar: Mirko em versão natalina com saco de presentes"><img src="img/galeria-natal.jpg" loading="lazy" alt="Mirko em versão natalina com saco de presentes" /></button>
+        <button class="gallery-item reveal d1" type="button" aria-label="Ampliar: Mirko de quimono com coque"><img src="img/galeria-quimono.jpg" loading="lazy" alt="Mirko de quimono com coque" /></button>
+        <button class="gallery-item reveal d2" type="button" aria-label="Ampliar: Mirko em look casual cinza com a mão na cabeça"><img src="img/galeria-casual.jpg" loading="lazy" alt="Mirko em look casual cinza com a mão na cabeça" /></button>
+        <button class="gallery-item reveal d3" type="button" aria-label="Ampliar: Mirko de boné azul segurando um picolé"><img src="img/mirko-treino-2.jpg" loading="lazy" alt="Mirko de boné azul segurando um picolé" /></button>
+        <button class="gallery-item reveal" type="button" aria-label="Ampliar: Mirko comendo uma cenoura, em arte colorida"><img src="img/mirko-treino-1.jpg" loading="lazy" alt="Mirko comendo uma cenoura, em arte colorida" /></button>
+        <button class="gallery-item reveal d1" type="button" aria-label="Ampliar: Esboço azul de Mirko ajeitando os óculos"><img src="img/galeria-esboco-azul.jpg" loading="lazy" alt="Esboço azul de Mirko ajeitando os óculos" /></button>
+        <button class="gallery-item reveal d2" type="button" aria-label="Ampliar: Esboço de Mirko com balão de fala em japonês"><img src="img/galeria-esboco-bolha.jpg" loading="lazy" alt="Esboço de Mirko com balão de fala em japonês" /></button>
+        <button class="gallery-item reveal d3" type="button" aria-label="Ampliar: Esboço de Mirko com a chamada do volume 27 do mangá"><img src="img/galeria-esboco-vol27.jpg" loading="lazy" alt="Esboço de Mirko com a chamada do volume 27 do mangá" /></button>
+        <button class="gallery-item reveal" type="button" aria-label="Ampliar: Esboço de Mirko sorrindo com o número 25"><img src="img/galeria-esboco-vol25.jpg" loading="lazy" alt="Esboço de Mirko sorrindo com o número 25" /></button>
+        <button class="gallery-item reveal d1" type="button" aria-label="Ampliar: Esboço vertical de Mirko sorrindo, com o número 27"><img src="img/galeria-esboco-alto.jpg" loading="lazy" alt="Esboço vertical de Mirko sorrindo, com o número 27" /></button>
+        <button class="gallery-item reveal d2" type="button" aria-label="Ampliar: Close de Mirko com olhos vermelhos e sorriso largo"><img src="img/mirko-hero.jpg" loading="lazy" alt="Close de Mirko com olhos vermelhos e sorriso largo" /></button>
+      </div>
+    </section>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+      <span class="lightbox__count" aria-live="polite"></span>
+      <button class="lightbox__close" aria-label="Fechar">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" aria-label="Imagem anterior">&#8249;</button>
+      <figure>
+        <img class="lightbox__img" alt="" />
+        <figcaption class="lightbox__caption"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" aria-label="Próxima imagem">&#8250;</button>
+    </div>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">MIRKO</a>
+        <p>Fã-page dedicada à heroína coelho de My Hero Academia.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="treino.html">Treino</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="contato.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.85.22 2.5.48.68.26 1.25.62 1.82 1.18.56.57.92 1.14 1.18 1.82.26.65.43 1.4.48 2.5.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.85-.48 2.5a4.9 4.9 0 0 1-1.18 1.82 4.9 4.9 0 0 1-1.82 1.18c-.65.26-1.4.43-2.5.48-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.85-.22-2.5-.48a4.9 4.9 0 0 1-1.82-1.18 4.9 4.9 0 0 1-1.18-1.82c-.26-.65-.43-1.4-.48-2.5C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.85.48-2.5.26-.68.62-1.25 1.18-1.82A4.9 4.9 0 0 1 5.54 1.4c.65-.26 1.4-.43 2.5-.48C9.14 2.01 9.4 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg></a>
+        <a href="contato.html" aria-label="Twitter/X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.9 22H1.8l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 4H5.3l12.4 16Z"/></svg></a>
+      </div>
+    </div>
+    <p class="footer__legal">Fã-page não oficial — My Hero Academia © seus respectivos criadores. As artes pertencem aos seus autores.</p>
+  </footer>
+</body>
+</html>
